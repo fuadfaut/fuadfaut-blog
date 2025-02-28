@@ -1,6 +1,7 @@
 +++
 date = '2025-02-27T21:51:20+08:00'
 title = 'Cobalt'
+categories = ['teknologi', 'software']
 +++
 
 
