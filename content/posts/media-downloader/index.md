@@ -18,20 +18,17 @@ Pengen download video atau musik dari internet tapi pake aplikasi yang simpel, g
 
 ![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-2.png)
 
-![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-3.png)
-
-![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-4.png)
-
-![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-5.png)
-
-![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-6.png)
-
-![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-7.png)
 
 ---
 
 ### **Apa Itu Media Downloader?**  
 Media Downloader adalah aplikasi berbasis GUI (antarmuka grafis) yang memudahkan kamu buat ngunduh file media—kayak video, musik, atau bahkan subtitle—dari banyak website. Aplikasi ini dibangun dengan teknologi cross-platform, jadi bisa dipake di Linux, Windows, atau macOS. Yang keren, aplikasi ini *open-source*, artinya kamu bisa liat source codenya langsung di GitHub dan bahkan ikut berkontribusi kalo mau!  
+
+![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-3.png)
+
+![media-downloader.png](https://raw.githubusercontent.com/mhogomchungu/media-downloader/main/images/media-downloader-4.png)
+
+
 
 ---
 
