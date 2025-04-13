@@ -1,7 +1,7 @@
 +++
 date = '2025-03-27T04:24:32+08:00'
 draft = false
-title = 'PeazipPeaZip: Aplikasi Kompresi File Gratis, Open Source, dan Multi-Platform'
+title = 'PeaZip: Aplikasi Kompresi File Gratis, Open Source, dan Multi-Platform'
 categories = ['Open Source', 'Aplikasi']
 +++
 
