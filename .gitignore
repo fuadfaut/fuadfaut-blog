@@ -1,3 +1,53 @@
+# Hugo default
 /public/
 /resources/
 hugo_stats.json
+
+# Obsidian
+.obsidian/
+**/.obsidian/
+.trash/
+**/.trash/
+.DS_Store
+**/.DS_Store
+
+# Obsidian workspace files
+*.workspace
+workspace.json
+workspace
+
+# Obsidian plugin data
+.obsidian-git-data
+.hot-reload.json
+
+# Obsidian sync plugin
+.sync-ignore
+
+# Obsidian mobile
+.mobile
+
+# Obsidian Canvas
+*.canvas
+
+# Obsidian conflict files
+*conflict-files-obsidian*
+*.conflict*
+
+# Temporary files
+*.temp
+*.tmp
+
+# Node modules (if using any Node.js based Hugo plugins)
+node_modules/
+
+# Hugo lock file
+.hugo_build.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

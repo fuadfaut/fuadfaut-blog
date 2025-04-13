@@ -1,0 +1,10 @@
+{{- $id := .Get "id" -}}
+{{- $label := .Get "label" -}}
+{{- $width := .Get "width" | default "full" -}}
+
+<div class="w-{{ $width }} mx-auto">
+    <lite-youtube 
+        videoid="{{ $id }}" 
+        playlabel="{{ $label }}"
+    ></lite-youtube>
+</div>

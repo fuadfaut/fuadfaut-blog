@@ -1,0 +1,22 @@
+/* Ukuran kustom untuk semua video */
+lite-youtube {
+    max-width: 100%;
+    width: 600px;  /* atau ukuran yang diinginkan */
+    margin: 0 auto; /* untuk centering */
+}
+
+/* Ukuran berbeda untuk layar mobile */
+@media (max-width: 640px) {
+    lite-youtube {
+        width: 100%;
+    }
+}
+
+/* Kelas khusus untuk video tertentu */
+.video-small {
+    width: 400px;
+}
+
+.video-large {
+    width: 800px;
+}
