@@ -29,6 +29,11 @@
     <div class="mt-1 text-2xl">
       {{ partialCached "author-links.html" . }}
     </div>
+    {{ with .Site.Params.profileDescription }}
+    <div class="mt-2 px-4 text-center text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+      {{ . | markdownify }}
+    </div>
+  {{ end }}
   </header>
   <section class="prose dark:prose-invert">{{ .Content }}</section>
 </article>

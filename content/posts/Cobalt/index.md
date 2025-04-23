@@ -5,7 +5,6 @@ categories = ['teknologi', 'software']
 +++
 
 
-Berikut adalah artikel tentang **Cobalt.tools** beserta tutorial penggunaannya dalam format Markdown. Karena saya tidak dapat menyisipkan gambar langsung, saya akan memberikan template untuk menambahkan gambar dari URL eksternal.
 
 ---
 

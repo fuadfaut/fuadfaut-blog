@@ -12,6 +12,7 @@ title = "fuadfaut"
 #   logo = "logo.png"
 #  secondaryLogo = "logo.png"
    description = "My awesome website"
+#   profileDescription = "Hai, aku Fuad — UI/UX Designer & Grafis Junkie yang suka ngoprek kode sekaligus ngeblog!"
    copyright = "Copy, _right?_ "
 
  [params.author]
