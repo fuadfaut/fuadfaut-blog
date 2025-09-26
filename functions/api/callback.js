@@ -28,21 +28,23 @@ export async function onRequestGet(context) {
     return new Response(JSON.stringify(tokenJson), { status: 400, headers: { "Content-Type": "application/json" } });
   }
 
+  const token = tokenJson.access_token;
+
   const html = `
 <!doctype html><html><body>
 <script>
   (function() {
-    var token = ${JSON.stringify(tokenJson.access_token)};
-    if (window.opener) {
-      window.opener.postMessage({ token: token }, "*");
-      window.close();
-    } else {
-      document.write("Token: " + token);
-    }
+    var token = ${JSON.stringify(token)};
+    // format lama (string) - kompatibel Decap/Netlify CMS
+    try { window.opener && window.opener.postMessage('authorization:github:success:' + token, '*'); } catch (e) {}
+    // format baru (object)
+    try { window.opener && window.opener.postMessage({ token: token }, '*'); } catch (e) {}
+    window.close();
   })();
 </script>
 Sukses login. Kamu boleh menutup tab ini.
 </body></html>`;
+
   const headers = new Headers({ "Content-Type": "text/html" });
   headers.append("Set-Cookie", "oauth_state=; Path=/; Max-Age=0; SameSite=Lax; Secure");
   return new Response(html, { status: 200, headers });
