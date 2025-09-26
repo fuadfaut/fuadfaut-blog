@@ -24,3 +24,7 @@ title = 'fuadfaut'
 
 [minify]
   disable = false
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^TINA_']
