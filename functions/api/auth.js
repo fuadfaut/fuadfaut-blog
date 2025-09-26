@@ -24,10 +24,16 @@ function cryptoRandomString(len) {
   return Array.from(arr, b => b.toString(16).padStart(2, "0")).join("");
 }
 
-function setCookie(headers, name, value, { httpOnly = false, sameSite = "Lax", path = "/", maxAge, secure = false } = {}) {
-  let cookie = `${name}=${value}; Path=${path}; SameSite=${sameSite}`;
+function setCookie(headers, name, value, {
+  httpOnly = true,   // tetap HttpOnly
+  sameSite = "None", // pakai None
+  path = "/",
+  maxAge = 300,
+  secure = true      // wajib Secure untuk SameSite=None
+} = {}) {
+  let cookie = `${name}=${value}; Path=${path}; SameSite=${sameSite}; Max-Age=${maxAge}`;
   if (httpOnly) cookie += "; HttpOnly";
   if (secure) cookie += "; Secure";
-  if (maxAge) cookie += `; Max-Age=${maxAge}`;
   headers.append("Set-Cookie", cookie);
 }
+
