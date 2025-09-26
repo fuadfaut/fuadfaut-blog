@@ -1,3 +1,7 @@
+---
+title: About Me
+---
+
 +++
 title = "About Me"
 description = "aya adalah seorang desain grafis dengan pengalaman lebih dari 3 tahun di bidang UI Design dan Desain Grafis. Dengan kombinasi keterampilan teknis dan pemahaman mendalam tentang pengalaman pengguna, saya telah berhasil menyelesaikan berbagai proyek desain yang memadukan estetika visual dengan fungsionalitas."
@@ -9,9 +13,6 @@ layoutBackgroundHeaderSpace = false
 showZenMode = false
 
 +++
-
-
-
 
 Halo! saya **Fuad Azmi** seorang desain grafis dengan pengalaman lebih dari 3 tahun di bidang UI Design dan Desain Grafis. Dengan kombinasi keterampilan teknis dan pemahaman mendalam tentang pengalaman pengguna, saya telah berhasil menyelesaikan berbagai proyek desain yang memadukan estetika visual dengan fungsionalitas.
 
@@ -30,17 +31,16 @@ Saya percaya bahwa desain yang baik harus menyelesaikan masalah. Proses kerja sa
 ## Teknologi & Tools
 
 Familiar dengan aplikasi desain seperti:
-- Adobe Creative Suite (Photoshop, Illustrator)
-- Figma
 
+* Adobe Creative Suite (Photoshop, Illustrator)
+* Figma
 
 ## Portofolio
 
-Portofolio yang mencakup berbagai proyek UI/UX dan desain grafis :
-- Desain website responsif
-- Aplikasi mobile
-- Identitas brand
-- Material pemasaran digital dan cetak
-- Desain feed social media
+Portofolio yang mencakup berbagai proyek UI/UX dan desain grafis yang akan diupdate pada halaman portfolio :
 
-
+* Desain website responsif
+* Aplikasi mobile
+* Identitas brand
+* Material pemasaran digital dan cetak
+* Desain feed social media
