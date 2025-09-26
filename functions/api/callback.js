@@ -1,3 +1,4 @@
+// VERSION: cb-v3
 export async function onRequestGet(context) {
   const url = new URL(context.request.url);
   const code = url.searchParams.get("code");
@@ -36,31 +37,26 @@ export async function onRequestGet(context) {
 <script>
 (function () {
   var token = ${JSON.stringify(token)};
-  // 1) postMessage format lama (string)
+  var origin = ${JSON.stringify(origin)};
+  // 1) format lama (string)
   try { window.opener && window.opener.postMessage('authorization:github:success:' + token, '*'); } catch(e) {}
-  try { window.opener && window.opener.postMessage('authorization:github:success:' + token, ${JSON.stringify(origin)}); } catch(e) {}
-
-  // 2) postMessage format object (beberapa versi Decap)
+  try { window.opener && window.opener.postMessage('authorization:github:success:' + token, origin); } catch(e) {}
+  // 2) format object
   try { window.opener && window.opener.postMessage({ token: token }, '*'); } catch(e) {}
-  try { window.opener && window.opener.postMessage({ token: token }, ${JSON.stringify(origin)}); } catch(e) {}
-
-  // 3) HARD fallback: set langsung di storage milik opener (same-origin)
+  try { window.opener && window.opener.postMessage({ token: token }, origin); } catch(e) {}
+  // 3) langsung simpan ke storage opener
   try {
     if (window.opener && window.opener.localStorage) {
-      // dua kunci yang umum dipakai
       window.opener.localStorage.setItem('decap-cms-user', JSON.stringify({ token: token }));
       window.opener.localStorage.setItem('netlify-cms-user', JSON.stringify({ token: token }));
     }
   } catch(e) {}
-
-  // 4) refresh admin supaya UI kebuka
+  // 4) refresh halaman admin
   try { window.opener && window.opener.location.reload(); } catch(e) {}
-
-  // tutup popup
   setTimeout(function(){ window.close(); }, 300);
 })();
 </script>
-Sukses login. Kamu boleh menutup tab ini.
+<pre>Decap callback OK — VERSION cb-v3</pre>
 </body></html>`;
   const headers = new Headers({ "Content-Type": "text/html" });
   headers.append("Set-Cookie", "oauth_state=; Path=/; Max-Age=0; SameSite=Lax; Secure");
