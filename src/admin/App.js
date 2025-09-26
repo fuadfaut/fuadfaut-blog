@@ -13,8 +13,8 @@ const App = () => {
     <TinaProvider
       clientId={tinaConfig.clientId}
       branch={tinaConfig.branch}
-      isLocalClient={true}
-      data={{ 
+      isLocalClient={typeof window !== 'undefined' && window.location.hostname === 'localhost'}
+      data={{
         get: (relativePath) => {
           // This is a simplified data fetching implementation
           // In a real setup, this would connect to your data layer

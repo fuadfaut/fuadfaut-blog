@@ -1,4 +1,4 @@
-{{ if eq (getenv "HUGO_TINA_DEV") "true" }}
+{{ if or (eq (getenv "HUGO_TINA_DEV") "true") (getenv "TINA_CLIENT_ID") }}
 <!-- Tina CMS Script -->
 <script>
   // Check if we're in the TinaCMS iframe context

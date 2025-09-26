@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "hugo server",
-    "build": "hugo",
+    "build": "tinacms build && hugo",
     "tinacms": "tinacms",
     "tina-dev": "tinacms server:start -c \"hugo server -D\"",
     "tina-build": "tinacms server:build && tinacms server:start"

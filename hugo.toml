@@ -12,7 +12,7 @@ title = 'fuadfaut'
   cacheable = true
 
 [params]
-  # Enable Tina CMS in development
+  # Enable Tina CMS in development and production
   enableTinaCMS = true
 
 [outputs]

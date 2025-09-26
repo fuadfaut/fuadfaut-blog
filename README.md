@@ -44,6 +44,7 @@ This site is configured for deployment to Cloudflare Pages. To deploy:
    - Environment variables (if using Tina Cloud):
      - `TINA_CLIENT_ID`: Your Tina Cloud client ID
      - `TINA_TOKEN`: Your Tina Cloud token
+     - (Optional) `HUGO_TINA_DEV`: Set to "true" if you want TinaCMS to be active in production
 4. Deploy!
 
 ### GitHub Actions Deployment
