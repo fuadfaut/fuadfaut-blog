@@ -37,12 +37,13 @@ function randomHex(len) {
 function setCookie(headers, name, value, {
   httpOnly = true,
   sameSite = "None",
-  secure = true,
   path = "/",
-  maxAge = 300
+  maxAge = 300,
+  secure = true
 } = {}) {
   let cookie = `${name}=${value}; Path=${path}; SameSite=${sameSite}; Max-Age=${maxAge}`;
   if (httpOnly) cookie += "; HttpOnly";
   if (secure) cookie += "; Secure";
   headers.append("Set-Cookie", cookie);
 }
+
