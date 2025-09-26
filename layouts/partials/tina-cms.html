@@ -14,9 +14,10 @@
       .catch(err => {
         console.warn('TinaCMS client not loaded:', err);
       });
- } else {
-     // For direct access to pages, redirect to TinaCMS admin
-     window.location.href = '/admin/index.html';
-   }
- </script>
+  } else {
+    // Only redirect to admin if specifically accessing admin pages
+    // For direct access to pages, do not redirect automatically
+    // This allows users to view the site normally without being redirected
+  }
+  </script>
 {{ end }}
