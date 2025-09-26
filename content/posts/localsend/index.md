@@ -2,7 +2,7 @@
 date = '2025-03-04T05:48:09+08:00'
 draft = false
 title = 'Kirim File Tanpa Ribet | Localsend'
-categories = ['Teknologi', 'software', 'opensource']
+categories = ['Teknologi', 'software', 'Open Source']
 +++
 
 

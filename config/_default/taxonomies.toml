@@ -1,0 +1,5 @@
+# Taxonomies configuration
+# https://gohugo.io/content-management/taxonomies/#configure-taxonomies
+
+category = "categories"
+tag = "tags"

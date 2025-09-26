@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: fuadfaut/fuadfaut-blog
+  branch: main
+  base_url: https://fuadfaut.my.id
+  auth_endpoint: /api/auth
+
+# fallback kalau ada koleksi non-bundle
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  # POSTS → content/posts/<slug>/index.md (+media sekatalog)
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    extension: "md"
+    media_folder: ""
+    public_folder: ""
+    preview_path: "posts/{{slug}}/"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date",  name: "date",  widget: "datetime" }
+      - { label: "Cover", name: "cover", widget: "image", required: false }
+      - { label: "Tags",  name: "tags",  widget: "list", required: false }
+      - { label: "Body",  name: "body",  widget: "markdown" }
+
+  # ABOUT (bundle) → content/about/index.md (+photo sekatalog)
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "content/about/index.md"
+        media_folder: ""
+        public_folder: ""
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Photo", name: "photo", widget: "image", required: false }
+          - { label: "Body",  name: "body",  widget: "markdown" }
+
+  # PORTFOLIO → content/portfolio/<slug>/index.md (+gallery sekatalog)
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/portfolio"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    extension: "md"
+    media_folder: ""
+    public_folder: ""
+    preview_path: "portfolio/{{slug}}/"
+    fields:
+      - { label: "Title",     name: "title",     widget: "string" }
+      - { label: "Date",      name: "date",      widget: "datetime" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false }
+      - { label: "Gallery",   name: "gallery",   widget: "list", required: false, field: { label: "Image", name: "image", widget: "image" } }
+      - { label: "Body",      name: "body",      widget: "markdown" }
