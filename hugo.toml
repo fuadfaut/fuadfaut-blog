@@ -1,3 +1,26 @@
-baseURL = 'https://fuadfaut.my.id'
+baseURL = 'https://fuadfaut.pages.dev'
 languageCode = 'en-us'
 title = 'fuadfaut'
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.116.0"
+
+[build]
+  writeStats = true
+  cacheable = true
+
+[params]
+  # Enable Tina CMS in development
+  enableTinaCMS = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+ taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[minify]
+  disable = false

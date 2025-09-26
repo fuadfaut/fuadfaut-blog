@@ -1,47 +1,24 @@
-# Hugo default
-/public/
-/resources/
-hugo_stats.json
-
-# Obsidian
-.obsidian/
-**/.obsidian/
-.trash/
-**/.trash/
-.DS_Store
-**/.DS_Store
-
-# Obsidian workspace files
-*.workspace
-workspace.json
-workspace
-
-# Obsidian plugin data
-.obsidian-git-data
-.hot-reload.json
-
-# Obsidian sync plugin
-.sync-ignore
-
-# Obsidian mobile
-.mobile
-
-# Obsidian Canvas
-*.canvas
-
-# Obsidian conflict files
-*conflict-files-obsidian*
-*.conflict*
-
-# Temporary files
-*.temp
-*.tmp
-
-# Node modules (if using any Node.js based Hugo plugins)
+# Dependencies
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Hugo lock file
-.hugo_build.lock
+# Production builds
+public/
+resources/
+
+# Cloudflare Pages specific
+.cloudflare/
+dist/
+
+# Tina CMS
+.tina/
+.tina_grpc/
+__generated__/
+
+# Environment variables
+.env
 
 # OS generated files
 .DS_Store
@@ -51,3 +28,19 @@ node_modules/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Hugo
+.hugo_build.lock
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,22 @@
+{{ if eq (getenv "HUGO_TINA_DEV") "true" }}
+<!-- Tina CMS Script -->
+<script>
+  // Check if we're in the TinaCMS iframe context
+  const isFramed = window.self !== window.top;
+  
+  if (isFramed) {
+    // Load TinaCMS in iframe context
+    fetch('/___tina/tinacms.js')
+      .then(response => response.text())
+      .then(script => {
+        eval(script);
+      })
+      .catch(err => {
+        console.warn('TinaCMS client not loaded:', err);
+      });
+ } else {
+    // For direct access to pages, redirect to TinaCMS admin
+    window.location.href = '/admin/index.html';
+  }
+</script>
+{{ end }}
