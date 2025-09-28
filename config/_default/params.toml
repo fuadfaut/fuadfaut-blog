@@ -1,5 +1,5 @@
 # -- Theme Options --
-# These options control how the theme functions and allow you to
+# These options control how theme functions and allow you to
 # customise the display of your website.
 #
 # Refer to the theme docs for more details about each of these parameters.
@@ -21,7 +21,7 @@ disableImageOptimization = false
 disableTextInHeader = false
 disableImageZoom = true
 
-# backgroundImageWidth = 1200
+# backgroundImageWidth = 120
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
 # defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
@@ -38,21 +38,21 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [footer]
   showMenu = true
-  showCopyright = true
+ showCopyright = true
   showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
-  showRecent = true
+ #homepageImage = "IMAGE.jpg" # used in: hero, and card
+ showRecent = true
   showRecentItems = 3
   showMoreLink = true
-  showMoreLinkDest = "/posts/"
+ showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+ layoutBackgroundBlur = false # only used when layout equals background
   
   
 
@@ -61,12 +61,12 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showViews = false
   showLikes = false
   showDateOnlyInArticle = false
-  showDateUpdated = false
+ showDateUpdated = false
   showAuthor = true
   # showAuthorBottom = false
   showHero = true
   heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+ layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
  showDraftLabel = true
@@ -74,14 +74,14 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   # editURL = "https://github.com/username/repo/"
   editAppendPath = true
  seriesOpened = true
-  showHeadingAnchors = true
+ showHeadingAnchors = true
   showPagination = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
   # showRelatedContent = false
   # relatedContentLimit = 3
-  showTaxonomies = true
+ showTaxonomies = true
   showAuthorsBadges = true
   showWordCount = true
   sharingLinks = [ "twitter", "pinterest", "facebook", "email", "whatsapp", "telegram"]
@@ -94,18 +94,18 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
  showSummary = true
-  showViews = false
+ showViews = false
   showLikes = false
   showTableOfContents = false
   showCards = false
   orderByWeight = false
   groupByYear = true
-  cardView = false
+ cardView = false
   cardViewScreenWidth = false
-  constrainItemsWidth = false
+ constrainItemsWidth = false
 
 [sitemap]
-  excludedKinds = []
+  excludedKinds = ["taxonomy", "term", "RSS", "404", "sitemap"]
 
 [taxonomy]
   showTermCount = true
@@ -119,13 +119,13 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [term]
   showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+ # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
   showTableOfContents = true
   groupByYear = false
-  cardView = false
+ cardView = false
  cardViewScreenWidth = false
 
 [firebase]
@@ -156,7 +156,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   # identifier = ""
   # globalWidget = true
   # globalWidgetMessage = "Hello"
-  # globalWidgetColor = "#FFDD00"
+ # globalWidgetColor = "#FFDD00"
   # globalWidgetPosition = "Right"
 
 [verification]
