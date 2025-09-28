@@ -19,8 +19,8 @@ title = 'fuadfaut'
   home = ["HTML", "RSS", "JSON", "SITEMAP"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
- taxonomy = ["HTML"]
- term = ["HTML"]
+ taxonomy = ["HTML", "RSS"]
+ term = ["HTML", "RSS"]
 
 [minify]
   disable = false
