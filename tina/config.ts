@@ -51,7 +51,7 @@ export default defineConfig({
           },
           {
             type: "string",
-            name: "category",
+            name: "categories",
             label: "Categories",
             list: true,
             ui: {
