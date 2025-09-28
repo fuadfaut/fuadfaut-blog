@@ -5,17 +5,23 @@
   "main": "index.js",
   "scripts": {
     "dev": "hugo server",
-    "build": "tinacms build && hugo",
+    "build": "dotenv tinacms build && hugo",
     "tinacms": "tinacms",
     "tina-dev": "tinacms server:start -c \"hugo server -D\"",
     "tina-build": "tinacms server:build && tinacms server:start"
   },
   "dependencies": {
-    "tinacms": "^1.5.24",
-    "@tinacms/cli": "^1.5.46"
+    "@tinacms/cli": "^1.5.46",
+    "tinacms": "^1.5.24"
   },
-  "devDependencies": {},
-  "keywords": ["hugo", "tina-cms", "blog"],
+  "devDependencies": {
+    "dotenv-cli": "^10.0.0"
+  },
+  "keywords": [
+    "hugo",
+    "tina-cms",
+    "blog"
+  ],
   "author": "Fuat",
   "license": "MIT"
 }
