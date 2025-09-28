@@ -1,4 +1,4 @@
-baseURL = 'https://fuadfaut.pages.dev'
+baseURL = 'https://fuadfaut.my.id'
 languageCode = 'en-us'
 title = 'fuadfaut'
 
@@ -16,11 +16,11 @@ title = 'fuadfaut'
   enableTinaCMS = true
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "SITEMAP"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
  taxonomy = ["HTML"]
-  term = ["HTML"]
+ term = ["HTML"]
 
 [minify]
   disable = false

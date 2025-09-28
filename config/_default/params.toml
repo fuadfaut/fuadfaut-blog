@@ -34,7 +34,7 @@ giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [header]
-  layout = "fixed-gradient" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+ layout = "fixed-gradient" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -54,6 +54,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
   
+  
 
 [article]
   showDate = true
@@ -68,18 +69,18 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = true
-  showDraftLabel = true
+ showDraftLabel = true
   showEdit = false
   # editURL = "https://github.com/username/repo/"
   editAppendPath = true
-  seriesOpened = true
+ seriesOpened = true
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
   # showRelatedContent = false
-  # relatedContentLimit = 3
+  # relatedContentLimit = 3
   showTaxonomies = true
   showAuthorsBadges = true
   showWordCount = true
@@ -92,7 +93,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
-  showSummary = true
+ showSummary = true
   showViews = false
   showLikes = false
   showTableOfContents = false
@@ -104,7 +105,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   constrainItemsWidth = false
 
 [sitemap]
-  excludedKinds = ["taxonomy", "term"]
+  excludedKinds = []
 
 [taxonomy]
   showTermCount = true
@@ -114,7 +115,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = false
+ cardView = false
 
 [term]
   showHero = false
@@ -125,11 +126,11 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showTableOfContents = true
   groupByYear = false
   cardView = false
-  cardViewScreenWidth = false
+ cardViewScreenWidth = false
 
 [firebase]
   # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
+ # authDomain = "XXXXXX"
   # projectId = "XXXXXX"
   # storageBucket = "XXXXXX"
   # messagingSenderId = "XXXXXX"
@@ -137,7 +138,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   # measurementId = "XXXXXX"
 
 [fathomAnalytics]
-  # site = "ABC12345"
+ # site = "ABC12345"
   # domain = "llama.yoursite.com"
 
 [umamiAnalytics]
@@ -160,7 +161,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 
 [verification]
   # google = ""
-  # bing = ""
+ # bing = ""
   # pinterest = ""
   # yandex = ""
   # fediverse = ""
