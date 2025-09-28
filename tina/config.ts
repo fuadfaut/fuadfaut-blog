@@ -50,6 +50,15 @@ export default defineConfig({
             },
           },
           {
+            type: "string",
+            name: "categories",
+            label: "Categories",
+            list: true,
+            ui: {
+              component: "tags",
+            },
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Body",
